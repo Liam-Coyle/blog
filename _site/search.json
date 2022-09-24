@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About me",
+    "section": "",
+    "text": "I am a final year Computer Science student at Queen’s University Belfast with a strong interest in ML, data science, and MLOps.\nDuring my time working as a Trainee ML Engineer at Kainos, I worked on multiple internal projects end-to-end, in areas such as supply chain optimisation, recommendation systems, and MLOps deployment/monitoring.\nI am currently working on my final year project in the area of unsupervised semantic segmentation.\n\n\nTrainee ML Engineer @ Kainos | July 2021 - July 2022\nAI Research Internship @ QLab | July 2020 - June 2022\n\n\n\nBEng Computer Science @ Queen’s University Belfast | Sep 2019 - Present"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Liam Coyle",
+    "section": "",
+    "text": "resources\n\n\n\n\n\n\n\n\n\n\n\nJun 26, 2022\n\n\nLiam Coyle\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/resources-i-like/index.html",
+    "href": "posts/resources-i-like/index.html",
+    "title": "Resources I like",
+    "section": "",
+    "text": "This list doesn’t contain resources which I’ve never used. It’s also not a list of every resource I’ve ever used.\nThis list isn’t in any particular order, and resources can appear multiple times under different headings.\n\nSoftware Development\n\n“Simple Made Easy” - Rich Hickey (2011)\nHammock Driven Development - Rich Hickey\nDesign, Composition, and Performance - Rich Hickey\nThe Missing Readme: A Guide for the New Software Engineer\nThe Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win\nThe Pragmatic Programmer\nClean Code\nThe Grug Brained Developer\nOn Being A Senior Engineer\nDevops: These Soft Parts\nContainers From Scratch • Liz Rice • GOTO 2018\nCalmcode\nI Like Notebooks - Jeremy Howard\nnbdev\nRefactoring guru (Refactoring + design patterns)\nSebastion Lague\n\n\n\nData Science\n\nModel Evaluation, Model Selection, and Algorithm Selection in Machine Learning\nRules of ML - Google\nA Few Useful Things to Know About Machine Learning\nEugene Yan\nExperimentation workflow with jupyter, papermill, and mlflow\nThe Data Science Lifecycle Process\nCookiecutter data science\nThe Post-Modern Stack\nMade With ML\nMLOps Community\nJosh Starmer\nNeural Networks - 3blue1brown\ncarykh\nPrimer\nContinuous Delivery for Machine Learning\nAwesome Data Science\nAwesome Data Engineering\nAwesome Production Machine Learning\nAwesome MLOps\nAwesome Software Engineering for Machine Learning\nAwesome Computer Vision\nApplied ML\nML Youtube Courses\nMachine Learning Interview\nAI Expert Roadmap\nML Glossary\n\n\n\nMLOps\n\nMade With ML\nMLOps Community\nContinuous Delivery for Machine Learning\nThe Data Science Lifecycle Process\nCookiecutter data science\nThe Post-Modern Stack\nAwesome Production Machine Learning\nAwesome MLOps\nAwesome Software Engineering for Machine Learning\n\n\n\nDevOps\n\nThe Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win\nDevops: These Soft Parts\n\n\n\nContainers\n\nContainers From Scratch • Liz Rice • GOTO 2018\nDockerfile windows\n\n\n\nAlgorithms\n\nAlgorithms - Coder Island\n\n\n\nElectronics\n\nBen Eater\n\n\n\nNetworking\n\nNetworking - Ben Eater\n\n\n\nTheory of computation\n\nIntroduction to the Theory of Computation - Coder Island\n\n\n\nMaths\n\n3blue1brown\nPrimer\nEddie Woo\n\n\n\nGame development\n\nSebastion Lague\nGame Maker’s Toolkit\n\n\n\nBooks\n\nThe Missing Readme: A Guide for the New Software Engineer\nThe Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win\nThe Pragmatic Programmer\nThink Again: The Power of Knowing What You Don’t Know\nThe Status Game: On Social Position and How We Use It\nAtomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones\nWhen Breath Becomes Air\nWar Doctor\n\n\n\nVideos\n\nHow to Speak - Patrick Winston\nAlphaGo - The Movie - Full award-winning documentary\nI Like Notebooks - Jeremy Howard\nSebastion Lague\n3blue1brown\nNeural Networks - 3blue1brown\nPrimer\ncarykh\nBen Eater\n“Simple Made Easy” - Rich Hickey (2011)\nHammock Driven Development - Rich Hickey\nDesign, Composition, and Performance - Rich Hickey\nIntroduction to the Theory of Computation - Coder Island\nAlgorithms - Coder Island\n\n\n\nBlogs\n\nHow To Do What You Love\nOn Being A Senior Engineer\nEugene Yan\nExperimentation workflow with jupyter, papermill, and mlflow\nWhy you (yes, you) should blog\nThe Grug Brained Developer\nContinuous Delivery for Machine Learning\n\n\n\nLife\n\nHow To Do What You Love\nHow to Speak - Patrick Winston\n\n\n\nOther lists\n\nAwesome\nAwesome Data Science\nAwesome Data Engineering\nAwesome Production Machine Learning\nAwesome MLOps\nAwesome Software Engineering for Machine Learning\nAwesome Computer Vision\nApplied ML\nML Youtube Courses\nMachine Learning Interview\nAI Expert Roadmap\nComputer Science ossu\nFree for dev\nML Glossary\nDockerfile windows\nProject based learning"
+  }
+]

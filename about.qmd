@@ -1,0 +1,38 @@
+---
+title: "About me"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Liam_Coyle_
+      href: https://twitter.com/Liam_Coyle_
+    - icon: linkedin
+      text: coyle-liam
+      href: https://www.linkedin.com/in/coyle-liam/
+    - icon: github
+      text: Liam-Coyle
+      href: https://github.com/Liam-Coyle
+
+---
+
+:::{#hero-heading}
+
+I am a final year Computer Science student at Queen's University Belfast with a strong interest in ML, data science, and MLOps. 
+
+During my time working as a Trainee ML Engineer at Kainos, I worked on multiple internal projects end-to-end, in areas such as supply chain optimisation, recommendation systems, 
+and MLOps deployment/monitoring.
+
+I am currently working on my final year project in the area of unsupervised semantic segmentation.
+
+## Experience
+
+Trainee ML Engineer @ [Kainos](https://www.kainos.com/) | July 2021 - July 2022
+
+AI Research Internship @ [QLab](https://makerspacequb.github.io/) | July 2020 - June 2022
+
+## Education
+
+BEng Computer Science @ [Queen's University Belfast](https://www.qub.ac.uk/) | Sep 2019 - Present
+
+:::

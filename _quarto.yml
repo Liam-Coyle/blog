@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Liam Coyle"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/Liam-Coyle
+      - icon: twitter
+        href: https://twitter.com/Liam_Coyle_
+      - icon: linkedin
+        href: https://www.linkedin.com/in/coyle-liam/
+format:
+  html:
+    theme: yeti
+    css: styles.css
+
+
+
