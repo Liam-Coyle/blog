@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Liam Coyle"
+  favicon: letter_L.png
   navbar:
     right:
       - about.qmd
