@@ -1,0 +1,11 @@
+{
+  "hash": "e915f3ce5ca02cecdbca8492b31f06d8",
+  "result": {
+    "markdown": "---\ntitle: \"How to set up WSL2 + CUDA + Docker\"\ndate: \"2022-09-24\"\ncategories: [tutorial, docker, cuda]\n---\n\nBelow are the instructions on how to set up Windows Subsystem for Linux (WSL2), \nCUDA, and Docker, so that you can run GPU-enabled docker containers inside a linux environment\non windows.\n\n## Pre-requisites\n1. You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11.\n    - Check your windows version by pressing `Windows Key + R` and typing `winver`.\n\n## Installing WSL2\n\n### Step 1\nLaunch windows CMD in administrator mode, and run \n\n```{bash}\nwsl --install -d Ubuntu\n```\n\n\n### Step 2\nRun `wsl --set-default-version 2`\n\n### Step 3\nRun `wsl --set-version Ubuntu 2`\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
