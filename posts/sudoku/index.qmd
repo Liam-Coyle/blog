@@ -1,0 +1,10 @@
+---
+title: "Solving Sudoku from images"
+date: "2022-01-13"
+categories: [computer vision]
+---
+
+I joined Kainos in July 2021 as a placement student, where I took part in their 7 week AI Academy. 
+The culminating event of the programme was to plan, develop, and present an individual capstone project.
+I published a blog about the project on the Kainos website which you can find [here](https://www.kainos.com/insights/blogs/ai-academy-capstone-projects--improving-document-data-extraction-through-contextualisation-computer-vision-based-sudoku-solver).
+

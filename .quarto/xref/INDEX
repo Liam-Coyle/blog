@@ -16,5 +16,8 @@
   },
   "posts/test/index.qmd": {
     "index.html": "394807d3"
+  },
+  "posts/sudoku/index.qmd": {
+    "index.html": "6de2d798"
   }
 }
