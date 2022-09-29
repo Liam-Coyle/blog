@@ -60,7 +60,7 @@ Sometimes there can be problems with DNS within WSL. If you have DNS issues, the
 Run the following commands in the WSL environment (unless otherwise specified.)
 
 ### Step 1 - Remove resolv.conf file
-`sudo rm -Rf resolv.conf`
+`sudo rm -Rf /etc/resolv.conf`
 
 ### Step 2 - Check your DNS servers
 In windows command prompt, run `ipconfig /all` and find the line 'DNS Servers' under the network adapter you are using. 
