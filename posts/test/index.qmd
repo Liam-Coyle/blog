@@ -2,7 +2,9 @@
 title: "How to set up WSL2 + CUDA + Docker"
 date: "2022-09-24"
 categories: [tutorial, docker, cuda]
-draft: true
+format:
+    html:
+        toc: true
 ---
 
 Below are the instructions on how to set up Windows Subsystem for Linux (WSL2), 
@@ -15,24 +17,99 @@ on windows.
 2. You must have a NVIDIA GPU installed in your computer.
 3. You must have the latest drivers installed for your GPU (download them [here](https://www.nvidia.com/Download/index.aspx?lang=en-us).)
 
-
 ## Installing WSL2
 
 Run the following commands in windows command prompt in _administrator mode_.
 
-### Step 1 - Install WSL + Ubuntu distribution
-`wsl.exe --install -d Ubuntu`
+### Step 1 - Install WSL
+`wsl.exe --install`
 
-### Step 2 - Ensure you have latest WSL kernel
+### Step 2 - Restart PC
+Restart your PC.
+
+### Step 3 - Ensure you have latest WSL kernel
 `wsl.exe --update`
 
-### Step 3 - Set the default WSL version to 2 
+### Step 4 - Restart WSL
+`wsl --shutdown`
+
+### Step 5 - Set the default WSL version to 2 
 `wsl.exe --set-default-version 2`
 
-### Step 4 - Make sure your Ubuntu installation is runing version 2
+### Step 6 - Install Ubuntu
+`wsl --install -d Ubuntu`
+
+### Step 7 - Set up Linux
+You should see a new terminal prompting you to enter a UNIX username. Do this now. (This doesn't have to match your windows username.)
+You will also be prompted to create a password. Note that the letters are invisible for security reasons.
+
+### Step 8 - Close Ubuntu terminal & make sure your Ubuntu installation is running version 2 of WSL.
+Close the Ubuntu terminal, and in your windows command prompt in _administrator_ mode, run `wsl.exe --set-version Ubuntu 2`
+
+### Step 9 - Make sure your Ubuntu installation is runing version 2
 `wsl.exe --set-version Ubuntu 2`
 
-### Step 5 - Set up Linux
-Run `wsl.exe` in your command prompt to launch the linux environment. If this doesn't work,
-`ubuntu`, or just search for 'Ubuntu' using windows search (`Windows key + Q`).
-When the linux environment launches, you will be prompted to create a username and password.
+### Step 10 - Restart WSL again
+`wsl --shutdown`
+
+You should now have WSL2 with Ubuntu properly installed. To launch WSL, either type `wsl` in windows command prompt to enter into
+the linux environment. You can check the Ubuntu version with the command `lsb_release -a` inside your linux environment.
+
+## Fixing DNS issues
+Sometimes there can be problems with DNS within WSL. If you have DNS issues, these steps should fix them. 
+Run the following commands in the WSL environment (unless otherwise specified.)
+
+### Step 1 - Remove resolv.conf file
+`sudo rm -Rf resolv.conf`
+
+### Step 2 - Check your DNS servers
+In windows command prompt, run `ipconfig /all` and find the line 'DNS Servers' under the network adapter you are using. 
+In my case, this was 'Wireless Lan adapter Wi-Fi'. Take note of these DNS Servers. 
+
+### Step 3 - Edit resolv.conf
+Run `sudo nano /etc/resolv.conf`. Write the following into the file: 
+```
+namespace xxx.xxx.xxx.xxx
+namespace xxx.xxx.xxx.xxx
+```
+where xxx.xxx.xxx.xxx is replaced by the DNS servers from the previous step (you can list as many as you like here.)
+Press `CTRL + o`, then `Enter` to save the file name, then `CTRL + x` to edit the text editor.
+
+### Step 4 - Make resolv.conf immutable
+`sudo chattr -f +i /etc/resolv.conf`
+
+Note: If you want to undo this later, you can do `sudo chattr -f -i /etc/resolv.conf`
+
+### Step 5 - Edit wsl.conf
+`sudo bash -c 'echo "[network]" > /etc/wsl.conf'`
+`sudo bash -c 'echo "generateResolvConf = false" >> /etc/wsl.conf'`
+
+### Step 6 - Restart WSL
+`wsl --shutdown`
+
+### Step 7 - Relaunch WSL + check resolv.conf hasn't changed
+Relaunch WSL with `wsl`, and run `cat /etc/resolv.conf`. This should print the contents of resolv.conf to the terminal. This should match
+what you wrote to the file in step 3. If not, something has gone wrong.
+
+Your DNS server should now be configured properly. Note: If you change connection you may need to re-do these steps.
+
+## Installing CUDA Toolkit
+You should be able to run CUDA applications within WSL now. However, if you want to _build_ CUDA applications, you will need the CUDA Toolkit.
+
+Follow steps [here](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local)
+inside the WSL environment.
+
+## Installing Docker
+
+Install Docker Desktop by following the instructions [here](https://www.docker.com/products/docker-desktop/).
+
+## Test everything works
+
+Make sure Docker Desktop is open, and within the WSL environment run `sudo docker run --rm --gpus all nvidia/cuda:11.0.3-base-ubuntu20.04 nvidia-smi`
+to test the latest official CUDA image.
+
+## References
+- [Getting Started with CUDA on WSL](https://docs.nvidia.com/cuda/wsl-user-guide/index.html#getting-started-with-cuda-on-wsl)
+- [Fix WSL2 DNS resolution](https://gist.github.com/coltenkrauter/608cfe02319ce60facd76373249b8ca6)
+- [WSL 2 keeps overwriting resolv.conf](https://github.com/microsoft/WSL/issues/5420#issuecomment-646479747)
+- [WSL2 DNS stops working](https://github.com/microsoft/WSL/issues/4285#issuecomment-522201021)
