@@ -19,5 +19,8 @@
   },
   "posts/sudoku/index.qmd": {
     "index.html": "6de2d798"
+  },
+  "posts/wsl2_cuda_docker/index.qmd": {
+    "index.html": "ef330170"
   }
 }

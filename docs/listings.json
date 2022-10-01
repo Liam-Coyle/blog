@@ -2,7 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/test/index.html",
+      "/posts/wsl2_cuda_docker/index.html",
       "/posts/resources-i-like/index.html",
       "/posts/sudoku/index.html"
     ]
