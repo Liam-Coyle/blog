@@ -46,14 +46,10 @@ You will also be prompted to create a password. Note that the letters are invisi
 ### Step 8 - Close Ubuntu terminal & make sure your Ubuntu installation is running version 2 of WSL.
 Close the Ubuntu terminal, and in your windows command prompt in _administrator_ mode, run `wsl.exe --set-version Ubuntu 2`
 
-### Step 9 - Make sure your Ubuntu installation is runing version 2
-`wsl.exe --set-version Ubuntu 2`
-
-### Step 10 - Restart WSL again
+### Step 9 - Restart WSL again
 `wsl --shutdown`
 
-You should now have WSL2 with Ubuntu properly installed. To launch WSL, either type `wsl` in windows command prompt to enter into
-the linux environment. You can check the Ubuntu version with the command `lsb_release -a` inside your linux environment.
+You should now have WSL2 with Ubuntu properly installed. Type `wsl` in windows command prompt to enter into the linux environment. You can check the Ubuntu version with the command `lsb_release -a` inside your linux environment.
 
 ## Fixing DNS issues
 Sometimes there can be problems with DNS within WSL. If you have DNS issues, these steps should fix them. 
@@ -102,6 +98,8 @@ inside the WSL environment.
 ## Installing Docker
 
 Install Docker Desktop by following the instructions [here](https://www.docker.com/products/docker-desktop/).
+
+In the Docker menu, go to *Settings > General* and select 'Use WSL 2 based engine.' Click Apply & restart. 
 
 ## Test everything works
 

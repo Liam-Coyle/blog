@@ -151,8 +151,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#step-6---install-ubuntu" id="toc-step-6---install-ubuntu" class="nav-link" data-scroll-target="#step-6---install-ubuntu">Step 6 - Install Ubuntu</a></li>
   <li><a href="#step-7---set-up-linux" id="toc-step-7---set-up-linux" class="nav-link" data-scroll-target="#step-7---set-up-linux">Step 7 - Set up Linux</a></li>
   <li><a href="#step-8---close-ubuntu-terminal-make-sure-your-ubuntu-installation-is-running-version-2-of-wsl." id="toc-step-8---close-ubuntu-terminal-make-sure-your-ubuntu-installation-is-running-version-2-of-wsl." class="nav-link" data-scroll-target="#step-8---close-ubuntu-terminal-make-sure-your-ubuntu-installation-is-running-version-2-of-wsl.">Step 8 - Close Ubuntu terminal &amp; make sure your Ubuntu installation is running version 2 of WSL.</a></li>
-  <li><a href="#step-9---make-sure-your-ubuntu-installation-is-runing-version-2" id="toc-step-9---make-sure-your-ubuntu-installation-is-runing-version-2" class="nav-link" data-scroll-target="#step-9---make-sure-your-ubuntu-installation-is-runing-version-2">Step 9 - Make sure your Ubuntu installation is runing version 2</a></li>
-  <li><a href="#step-10---restart-wsl-again" id="toc-step-10---restart-wsl-again" class="nav-link" data-scroll-target="#step-10---restart-wsl-again">Step 10 - Restart WSL again</a></li>
+  <li><a href="#step-9---restart-wsl-again" id="toc-step-9---restart-wsl-again" class="nav-link" data-scroll-target="#step-9---restart-wsl-again">Step 9 - Restart WSL again</a></li>
   </ul></li>
   <li><a href="#fixing-dns-issues" id="toc-fixing-dns-issues" class="nav-link" data-scroll-target="#fixing-dns-issues">Fixing DNS issues</a>
   <ul class="collapse">
@@ -224,14 +223,10 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="step-8---close-ubuntu-terminal-make-sure-your-ubuntu-installation-is-running-version-2-of-wsl.">Step 8 - Close Ubuntu terminal &amp; make sure your Ubuntu installation is running version 2 of WSL.</h3>
 <p>Close the Ubuntu terminal, and in your windows command prompt in <em>administrator</em> mode, run <code>wsl.exe --set-version Ubuntu 2</code></p>
 </section>
-<section id="step-9---make-sure-your-ubuntu-installation-is-runing-version-2" class="level3">
-<h3 class="anchored" data-anchor-id="step-9---make-sure-your-ubuntu-installation-is-runing-version-2">Step 9 - Make sure your Ubuntu installation is runing version 2</h3>
-<p><code>wsl.exe --set-version Ubuntu 2</code></p>
-</section>
-<section id="step-10---restart-wsl-again" class="level3">
-<h3 class="anchored" data-anchor-id="step-10---restart-wsl-again">Step 10 - Restart WSL again</h3>
+<section id="step-9---restart-wsl-again" class="level3">
+<h3 class="anchored" data-anchor-id="step-9---restart-wsl-again">Step 9 - Restart WSL again</h3>
 <p><code>wsl --shutdown</code></p>
-<p>You should now have WSL2 with Ubuntu properly installed. To launch WSL, either type <code>wsl</code> in windows command prompt to enter into the linux environment. You can check the Ubuntu version with the command <code>lsb_release -a</code> inside your linux environment.</p>
+<p>You should now have WSL2 with Ubuntu properly installed. Type <code>wsl</code> in windows command prompt to enter into the linux environment. You can check the Ubuntu version with the command <code>lsb_release -a</code> inside your linux environment.</p>
 </section>
 </section>
 <section id="fixing-dns-issues" class="level2">
@@ -279,6 +274,7 @@ namespace xxx.xxx.xxx.xxx</code></pre>
 <section id="installing-docker" class="level2">
 <h2 class="anchored" data-anchor-id="installing-docker">Installing Docker</h2>
 <p>Install Docker Desktop by following the instructions <a href="https://www.docker.com/products/docker-desktop/">here</a>.</p>
+<p>In the Docker menu, go to <em>Settings &gt; General</em> and select ‘Use WSL 2 based engine.’ Click Apply &amp; restart.</p>
 </section>
 <section id="test-everything-works" class="level2">
 <h2 class="anchored" data-anchor-id="test-everything-works">Test everything works</h2>
